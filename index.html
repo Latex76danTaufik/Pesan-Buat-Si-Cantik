@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan Buat Kamu</title>
+  <link rel="stylesheet" href="nembak do'i.css">
+</head>
+<body>
+    <audio id="background-music" src="viera rasa ini.mp3"></audio>
+  <!-- Popup 1 -->
+  <div id="popup1" class="popup hidden">
+    <div class="popup-header">
+      <span>Message</span>
+      <button class="close-btn" onclick="closePopup('popup1')">X</button>
+    </div>
+    <div class="popup-content">
+      <img src="Stiker 1 (SFILE.MOBI).gif" alt="Love GIF">
+      <p id="typing-text"></p>
+    </div>
+    <div class="popup-footer">
+<button onclick="showNextPopup('popup1', 'popup2', 'typing-text-2', 'Aku sebenernya suka banget sama kamu ❤️', 'typing-text-3', '😍kamu itu Cantik, Imut, Gemoy, tapi sayang cuma ngambekan aja 😝')">
+  ha apah??
+</button>
+    </div>
+  </div>
+
+  <!-- Popup 2 -->
+  <div id="popup2" class="popup hidden">
+    <div class="popup-header">
+      <span>Message</span>
+      <button class="close-btn" onclick="closePopup('popup2')">X</button>
+    </div>
+    <div class="popup-content">
+      <img src="Stiker 36 (SFILE.MOBI).gif" alt="Love GIF">
+      <h3 id="typing-text-2"></h3>
+      <h3 id="typing-text-3"></h3>
+    </div>
+    <div class="popup-footer">
+<button onclick="showNextPopup('popup2', 'popup3', 'typing-text-4', 'Yay! Jadian yuk??🤗')">Aku Juga Suka kamu kok</button>
+    </div>
+  </div>
+
+  <!-- Popup 3 -->
+  <div id="popup3" class="popup hidden">
+    <div class="popup-header">
+      <span>Message</span>
+      <button class="close-btn" onclick="closePopup('popup3')">X</button>
+    </div>
+    <div class="popup-content">
+      <img src="Stiker 15 (SFILE.MOBI).gif" alt="Love GIF">
+      <h3 id="typing-text-4"></h3>
+    </div>
+    <div class="popup-footer">
+<button onclick="showNextPopup('popup3', 'popup4', 'typing-text-5', '🫰I Love you🫰')">mau banget loh😍</button>
+<button onclick="menolak()">maap ga dulu</button>
+    </div>
+  </div>
+  
+  <!--popup 4-->
+    <div id="popup4" class="popup hidden">
+    <div class="popup-header">
+      <span>Message</span>
+      <button class="close-btn" onclick="closePopup('popup4')">X</button>
+    </div>
+    <div class="popup-content">
+      <img src="Stiker 2 (SFILE.MOBI).gif" alt="Love GIF">
+      <h3 id="typing-text-5"></h3>
+    </div>
+    <div class="popup-footer">
+<button onclick="showNextPopup('popup4', 'popup5', 'typing-text-6', '😘sekarang aku milik mu yaa cantik😚', 'typing-text-7', '💕semoga kita bisa langgeng selamanya 😇')">😘I Love you too💖</button>
+
+    </div>
+  </div>
+  
+<!-- Popup 5: ID diperbaiki -->
+<div id="popup5" class="popup hidden"> 
+  <div class="popup-header">
+    <span>Message</span>
+    <button class="close-btn" onclick="closePopup('popup5')">X</button>
+  </div>
+  <div class="popup-content">
+    <img src="Stiker 41 (SFILE.MOBI).gif" alt="Love GIF">
+    <h3 id="typing-text-6"></h3>
+    <h3 id="typing-text-7"></h3>
+  </div>
+  <div class="popup-footer">
+    <!-- Tombol WhatsApp -->
+    <a href="https://wa.me/+62 838-2406-3521?text=Aku%20Terima%20ya%20cinta%20kamu,%20ini%20hari%20pertama%20kita%20jadian,%20semoga%20langgeng%20sampe%20kapan%20pun,%20aaminn%20%23pesan%20dari%20web" target="_blank">
+      <button>Aaminn</button>
+    </a>
+  </div>
+</div>
+  <!-- Tombol untuk memulai -->
+<button id="show-popup-btn" class="show-popup-btn" onclick="showPopup('popup1'); playMusic();">
+  📩
+  <p>Pesan dari Latex76</p>
+</button>
+  <script src="nembak do'i.js"></script>
+</body>
+</html>
